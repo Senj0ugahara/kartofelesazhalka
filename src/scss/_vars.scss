@@ -1,0 +1,13 @@
+// colors
+:root {
+  // base
+  --content-width: 1520px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --header-content-width: 1732px;
+  --header-container-width: calc(var(--header-content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --green-color: #33A849;
+}

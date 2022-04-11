@@ -1,0 +1,129 @@
+.hero {
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 220px;
+  background-image: url(../img/hero-bg.png);
+  background-position: top center;
+  background-size: 100% 92%;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1204px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    border-bottom-right-radius: 60%;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 130px;
+    right: 23px;
+    width: 719px;
+    height: 879px;
+    background-image: url(../img/hero-img.png);
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 90px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 50px;
+    color: #323232;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__list {
+    max-width: 800px;
+    margin-bottom: 130px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+.hero-item {
+  position: relative;
+  padding-top: 20px;
+  padding-left: 35px;
+
+  &:nth-child(n+3) {
+    margin-top: 37px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42px;
+    height: 101px;
+    background-image: url(../img/hero-item-bg.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F1F1F;
+  }
+
+  &__desc {
+    margin: 0;
+    font-size: 17px;
+    line-height: 22px;
+    color: #1F1F1F;
+  }
+}
+
+.hero-buy {
+  display: flex;
+  align-items: center;
+
+  &__price {
+    display: block;
+  }
+
+  &__prices {
+    margin-right: 50px;
+  }
+
+  &__price--old {
+    margin-bottom: 17px;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 22px;
+    text-decoration-line: line-through;
+    color: #A6A6A6;
+    text-align: right;
+  }
+
+  &__price--now {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 22px;
+    color: #323232;
+  }
+}
